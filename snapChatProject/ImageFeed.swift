@@ -10,7 +10,19 @@ import Foundation
 import UIKit
 
 // This is the only line of code you should be modifying
-var threads: [String: [UIImage]] = ["Memes": [], "Dog Spots": [], "Random": []]
+class imageData {
+    let name: String!
+    let photo: UIImage!
+    let time: Date!
+    var viewState: Bool!
+    init(name: String, time: Date, viewState: Bool, photo: UIImage) {
+        self.name = name
+        self.photo = photo
+        self.time = time
+        self.viewState = viewState
+    }
+}
+var threads: [String: [imageData]] = ["Memes": [], "Dog Spots": [], "Random": []]
 //
 
 let threadNames = ["Memes", "Dog Spots", "Random"]
